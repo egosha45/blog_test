@@ -35,7 +35,8 @@ body {
 }
 
 /*Задаем параметры для список*/
-ul, li {
+ul,
+li {
   display: block;
   margin: 0;
   padding: 0;
@@ -254,7 +255,7 @@ btn {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .grid-element1 {
@@ -299,7 +300,6 @@ btn {
 
 /*Работа с флексами*/
 .flex-container2 {
-  height: 292px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -379,6 +379,8 @@ btn {
   font-family: Roboto;
   background: #34547A;
   color: white;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 input {
@@ -458,7 +460,8 @@ textarea:focus::placeholder {
     grid-template-rows: 480px 480px;
   }
 
-  .grid-photo1, .grid-photo2 {
+  .grid-photo1,
+  .grid-photo2 {
     display: none;
   }
 }
@@ -537,7 +540,7 @@ textarea:focus::placeholder {
 
   /*-----------Мои изменения-----------*/
   .flex-container {
-    margin-top: 350px;
+    margin-top: 25%;
   }
 
   .video {
@@ -561,7 +564,9 @@ textarea:focus::placeholder {
   }
 
   .mine-img {
-    width: 9%;
+    display: inline-block;
+    width: 10%;
+    height: 10%;
   }
 
   #work-title {
@@ -580,7 +585,8 @@ textarea:focus::placeholder {
     font-size: 12px;
   }
 
-  .form-name, .form-email {
+  .form-name,
+  .form-email {
     width: 200px;
     height: 40px;
   }
@@ -594,7 +600,7 @@ textarea:focus::placeholder {
     width: 150px;
     height: 40px;
     font-size: 10px;
-    padding-top: 10px;
+
   }
 
   @media screen and (max-width: 900px) {
@@ -616,7 +622,8 @@ textarea:focus::placeholder {
       font-size: 12px;
     }
 
-    .form-name, .form-email {
+    .form-name,
+    .form-email {
       width: 160px;
       height: 35px;
     }
@@ -683,7 +690,8 @@ textarea:focus::placeholder {
       height: 200px;
     }
 
-    .form-name, .form-email {
+    .form-name,
+    .form-email {
       width: 120px;
       height: 35px;
     }
